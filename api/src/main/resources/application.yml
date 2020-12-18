@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_cp
+    username: admin_gp
+    password: fpemwkahd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+      #        show_sql: true
+      format_sql: true
+
+  output.ansi.enabled: always
+
+logging.level:
+  org.hibernate:
+    SQL: debug
+    type: trace
+

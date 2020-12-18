@@ -1,0 +1,4 @@
+rootProject.name = 'cp'
+
+include 'core'
+include 'api'
